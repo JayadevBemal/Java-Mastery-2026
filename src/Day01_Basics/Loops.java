@@ -35,9 +35,18 @@ public class Loops {
 //        System.out.println(sum);
 //
         int table = sc.nextInt();
-        for(int i = 1;i <= 10;i++){
+//
+        for(int i = 10;i >= 1;i--){
             int result = table * i;
             System.out.println(table +"*" + i +"=" + result);
         }
+
+        int fact = sc.nextInt();
+        int result = 1;
+        for(int i = 1;i <= fact;i++){
+            result *= i;
+        }
+        System.out.println("the factorial is " + result);
+
     }
 }
